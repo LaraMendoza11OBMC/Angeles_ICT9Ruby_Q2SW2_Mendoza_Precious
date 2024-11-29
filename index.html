@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Containers Demo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-image: url("robot.jpg");
+      color: skyblue;
+      font-family: Times New Roman,sans-serif;
+    }
+    .form-control{
+      width: 500px;
+    }
+    .oh{
+      margin: 60px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .gogo{
+      margin: 0px;
+      margin-top: 40px;
+      margin-bottom: 0px;
+      margin-left: 500px;
+      margin-right: 500px;
+    }
+    .container{
+      background-color: black;
+      border-radius: 20px;
+      border: 4px solid black;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4 text-center">
+      Robotics Club Registration Form
+    </h1>
+    <form>
+    <div class="row erm">
+      <div class="form-group">
+        <label form="example_name"><b>Name</b></label>
+        <input type="name" class="form-control" id="example_name" placeholder="input Name">
+      </div>
+      <div class="form-group oh">
+        <label form="example_email"><b>Email Address</b></label>
+        <input type="email" class="form-control" id="example_email" placeholder="Input Email">
+      </div>
+    </div>
+    <div class="row erm">
+      <div class="form-group">
+        <label form="example_age"><b>Age</b></label>
+        <input type="age" class="form-control" id="example_age" placeholder="Input Age">
+      </div>
+      <div class="form-group oh">
+        <label form="example_phonenumber"><b>Phone Number</b></label>
+        <input type="example_phonenumber" class="form-control" id="example_phonenumber" placeholder="Input Phone Number" >
+      </div> <br> <br>
+      <div>
+        <label><b>Preferred Robotics Topics</b></label> <br>
+        <input type="checkbox" id="check" name="check"> Programming <br>
+        <input type="checkbox" id="check" name="check"> Electronics <br>
+        <input type="checkbox" id="check" name="check"> Mechanical Design <br> <br>
+        <label><b>Robotics Experienced Level</b></label> <br>
+        <input type="checkbox" id="check" name="check"> Beginner <br>
+        <input type="checkbox" id="check" name="check"> Intermediate <br>
+        <input type="checkbox" id="check" name="check"> Advanced <br><br>
+        <div>
+        <label class="ermm" for="select"><b>Preferred Robotics Project</b></label> <br>
+        <select id="select" name="select">
+          <option value="Choose project">Choose a Project...</option>
+        </select> <br><br>
+        <div>
+          <label><b>Statement of Interest</b></label> <br>
+          <textarea id="textarea" name="textarea" rows="3" cols="100"></textarea>
+        </div>
+      </div>
+      </div> 
+      <div class="form-group gogo">
+        <button type="submit" class="btn btn-primary">submit</button>
+        <button type="reset" class="btn btn-light">reset</button>
+      </div>
+    </div>
+    </form> 
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
